@@ -1,0 +1,5 @@
+<% @dogs.each do |dog| %>
+  <%= link_to(dog.name, "/dogs/#{dog.id}") %>
+  <%= button_to "delete", dog, :method => :delete %>
+  <br>
+<% end %>
